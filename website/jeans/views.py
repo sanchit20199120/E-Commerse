@@ -3,7 +3,7 @@ from .models import Item
 # Create your views here.
 
 def item_list(request):
-    context ={
+    context = {
         'items': Item.objects.all()
     }
-    return render(request, "item_list", context)
+    return render(request, "jeans/item_list.html", context)
