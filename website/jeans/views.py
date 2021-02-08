@@ -7,3 +7,9 @@ def item_list(request):
         'items': Item.objects.all()
     }
     return render(request, "jeans/home-page.html", context)
+
+def checkout(request):
+    return render(request, 'jeans/checkout-page.html')
+
+def product(request):
+    return render(request, 'jeans/product-page.html')
